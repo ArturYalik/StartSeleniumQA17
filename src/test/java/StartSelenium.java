@@ -24,6 +24,8 @@ public class StartSelenium {
 
     @AfterMethod
     public void pastCondition() {
+//        wd.close();
+        wd.quit();
 
     }
 
