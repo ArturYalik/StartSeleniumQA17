@@ -23,7 +23,11 @@ public class StartSelenium {
         List<WebElement> elements = wd.findElements(By.tagName("div"));
         System.out.println(elements.size());
         List<WebElement> home = wd.findElements(By.linkText("HOME"));
+        List<WebElement> home1 = wd.findElements(By.partialLinkText("HO"));
+        List<WebElement> root = wd.findElements(By.id("root"));
         System.out.println(home.size());
+        System.out.println(home1.size());
+        System.out.println(root.size());
     }
 
     @Test
